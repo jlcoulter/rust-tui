@@ -1,0 +1,20 @@
+[package]
+name = "rust-tui-template"
+version = "0.1.0"
+edition = "2021"
+description = "A Rust TUI application template"
+license = "MIT"
+
+[dependencies]
+ratatui = "0.29"
+crossterm = "0.28"
+clap = { version = "4", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+anyhow = "1"
+thiserror = "2"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[dev-dependencies]
+assert_cmd = "2"
+tempfile = "3"
